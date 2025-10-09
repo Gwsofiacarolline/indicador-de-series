@@ -1,0 +1,105 @@
+
+    /* ===== CSS ===== */
+    body {
+      margin: 0;
+      font-family: system-ui, Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 16px;
+    }
+
+    .app {
+      width: 100%;
+      max-width: 720px;
+      background: #0b1220cc;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    .sub {
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #374151;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 12px 0 20px;
+    }
+
+    .serie-titulo {
+      font-size: 22px;
+      margin: 0 0 6px;
+    }
+
+    .serie-vibe {
+      font-size: 13px;
+      opacity: 0.85;
+      margin-bottom: 8px;
+    }
+
+    .serie-desc {
+      line-height: 1.5;
+      font-size: 15px;
+    }
+
+    .botoes {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 16px;
+    }
+
+    button {
+      cursor: pointer;
+      border: 1px solid #475569;
+      background: #1f2937;
+      color: #e5e7eb;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 15px;
+      transition: transform .05s ease, background .2s ease;
+    }
+
+    button:hover { background: #273449; }
+    button:active { transform: scale(0.98); }
+
+    .rodape {
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.7;
+      margin-top: 14px;
+    }
+
+    .professor {
+      background: #0b3b1a;
+      border: 1px solid #14532d;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 14px;
+      display: none; /* começa escondido; “modo professor” ativa */
+      margin-top: 12px;
+    }
+
+    /* Avisa no mobile */
+    @media (max-width: 420px) {
+      h1 { font-size: 22px; }
+      .serie-desc { font-size: 14px; }
+    }
