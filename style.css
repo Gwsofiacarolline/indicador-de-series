@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: system-ui, Arial, sans-serif;
-  background: radial-gradient(circle at top, #020617, #000000 70%);
+  background: linear-gradient(180deg, #020617, #020617);
   color: #e5e7eb;
   min-height: 100vh;
   display: grid;
@@ -13,53 +13,45 @@ body {
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
-  background: rgba(2, 6, 23, 0.95);
-  border: 1px solid #22d3ee;
+  background: #020617;
+  border: 1px solid #1e293b;
   border-radius: 16px;
   padding: 24px;
-  box-shadow:
-    0 0 20px rgba(34, 211, 238, 0.25),
-    0 0 60px rgba(99, 102, 241, 0.15);
-  backdrop-filter: blur(8px);
 }
 
 h1 {
   margin: 0 0 8px;
   font-size: 28px;
   text-align: center;
-  color: #67e8f9;
-  text-shadow: 0 0 12px rgba(103, 232, 249, 0.6);
+  color: #e5e7eb;
 }
 
 .sub {
   text-align: center;
   font-size: 14px;
   margin-bottom: 20px;
-  color: #a5f3fc;
+  color: #cbd5f5;
   opacity: 0.9;
 }
 
 .card {
   background: #020617;
-  border: 1px solid #6366f1;
+  border: 1px solid #334155;
   border-radius: 12px;
   padding: 16px;
   margin: 12px 0 20px;
-  box-shadow: 0 0 15px rgba(99, 102, 241, 0.15);
 }
 
 .serie-titulo {
   font-size: 22px;
   margin: 0 0 6px;
-  color: #f472b6;
-  text-shadow: 0 0 8px rgba(244, 114, 182, 0.6);
+  color: #f9fafb;
 }
 
 .serie-vibe {
   font-size: 13px;
   margin-bottom: 8px;
-  color: #22d3ee;
-  opacity: 0.95;
+  color: #94a3b8;
 }
 
 .serie-desc {
@@ -78,50 +70,41 @@ h1 {
 
 button {
   cursor: pointer;
-  border: 1px solid #22d3ee;
-  background: transparent;
-  color: #67e8f9;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #e5e7eb;
   padding: 10px 14px;
   border-radius: 10px;
   font-size: 15px;
-  transition: 
-    transform 0.05s ease,
-    box-shadow 0.2s ease,
-    background 0.2s ease;
-  box-shadow: 0 0 12px rgba(34, 211, 238, 0.35);
+  transition: background 0.2s ease, transform 0.05s ease;
 }
 
 button:hover {
-  background: rgba(34, 211, 238, 0.15);
-  box-shadow:
-    0 0 18px rgba(34, 211, 238, 0.7),
-    0 0 40px rgba(99, 102, 241, 0.4);
+  background: #1e293b;
 }
 
 button:active {
-  transform: scale(0.97);
+  transform: scale(0.98);
 }
 
 .rodape {
   text-align: center;
   font-size: 12px;
   margin-top: 14px;
-  color: #a78bfa;
-  opacity: 0.85;
+  color: #94a3b8;
+  opacity: 0.8;
 }
 
 .professor {
-  background: rgba(2, 44, 34, 0.9);
-  border: 1px solid #22c55e;
+  background: #052e16;
+  border: 1px solid #14532d;
   padding: 12px;
   border-radius: 10px;
   font-size: 14px;
   display: none;
   margin-top: 12px;
-  color: #bbf7d0;
-  box-shadow: 0 0 15px rgba(34, 197, 94, 0.35);
+  color: #dcfce7;
 }
-
 
 /* Avisa no mobile */
 @media (max-width: 480px) {
@@ -138,4 +121,5 @@ button:active {
     padding: 14px;
   }
 }
+
 
