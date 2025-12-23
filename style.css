@@ -109,7 +109,7 @@ button:active {
 /* Avisa no mobile */
 @media (max-width: 480px) {
   body {
-    padding: 12px;
+    padding: 0;
   }
 
   .app {
@@ -121,5 +121,6 @@ button:active {
     padding: 14px;
   }
 }
+
 
 
