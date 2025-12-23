@@ -109,8 +109,19 @@ button:active {
   color: #dcfce7;
 }
 
+
 /* Avisa no mobile */
-@media (max-width: 420px) {
-  h1 { font-size: 22px; }
-  .serie-desc { font-size: 14px; }
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  .app {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .card {
+    padding: 14px;
+  }
 }
