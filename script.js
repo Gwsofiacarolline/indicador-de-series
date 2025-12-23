@@ -61,13 +61,12 @@ const professorBox = document.getElementById("professorBox");
 
 // ===== FUNÇÃO INDICAR SÉRIE =====
 function indicarSerie() {
- 
+
   const numeroAleatorio = Math.floor(Math.random() * series.length);
 
-
+  
   const serieEscolhida = series[numeroAleatorio];
 
-  
   resultado.innerHTML =
     "<h2 class='serie-titulo'>" + serieEscolhida.titulo + "</h2>" +
     "<p class='serie-vibe'>Vibe: " + serieEscolhida.vibe + "</p>" +
@@ -88,7 +87,6 @@ function alternarProfessor() {
 
 
 
+// ===== EVENTOS DE CLIQUE =====
 btnIndicar.addEventListener("click", indicarSerie);
 btnProfessor.addEventListener("click", alternarProfessor);
-btnCopiar.addEventListener("click", copiarJustificativa);
-
