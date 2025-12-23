@@ -52,8 +52,7 @@
         {
         titulo: "Black List",
         vibe: "Séries policiais, Séries dos EUA, Suspense para TV",
-        desc: "Após se entregar à polícia, um brilhante fugitivo oferece ajuda ao FBI, mas apenas se a novata Elizabeth Keen for sua parceira.
-"
+        desc: "Após se entregar à polícia, um brilhante fugitivo oferece ajuda ao FBI, mas apenas se a novata Elizabeth Keen for sua parceira."
       },
         
       
@@ -97,6 +96,7 @@ function alternarProfessor() {
 // ===== EVENTOS DE CLIQUE =====
 btnIndicar.addEventListener("click", indicarSerie);
 btnProfessor.addEventListener("click", alternarProfessor);
+
 
 
 
