@@ -22,7 +22,7 @@
       {
         titulo: "The Sinner (O Pecador)",
         vibe: "Crimes com camadas psicológicas e passado mal-resolvido.",
-        desc: "É uma série de antologia criminal que o foco não é descobrir /"quem/" cometeu o crime, mas sim /"por que/" ele foi cometido. A trama acompanha o detetive Harry Ambrose, que investiga crimes perturbadores e busca desvendar os traumas e mistérios por trás das ações dos /"pecadores/" em cada temporada. "
+        desc: "É uma série de antologia criminal que o foco não é descobrir quem cometeu o crime, mas sim por que ele foi cometido. A trama acompanha o detetive Harry Ambrose, que investiga crimes perturbadores e busca desvendar os traumas e mistérios por trás das ações dos pecadores em cada temporada. "
       },
       {
         titulo: "Behind Her Eyes (Por Trás de Seus Olhos)",
@@ -90,4 +90,5 @@ function alternarProfessor() {
 // ===== EVENTOS DE CLIQUE =====
 btnIndicar.addEventListener("click", indicarSerie);
 btnProfessor.addEventListener("click", alternarProfessor);
+
 
