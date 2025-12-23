@@ -35,8 +35,8 @@
         desc: "Horror com coração e psicologia: medo, luto e reconciliação. Você vai pular e refletir — às vezes ao mesmo tempo."
       },
       {
-        titulo: "desobedientes",
-        vibe: "Séries dramáticas, Canadenses, Séries de mistério, Suspense para TV",
+        titulo: "Desobedientes",
+        vibe: "Séries dramáticas, Canadenses, Séries de mistérios, Suspense para TV",
         desc: "Dois desconhecidos topam um ensaio farmacêutico que promete resolver tudo. Resultado: surreal, bonito e cabeça frita."
       },
       {
@@ -52,38 +52,59 @@
        
     ];
 
-    const resultado = document.getElementById("resultado");
-    const btnIndicar = document.getElementById("btnIndicar");
-    const btnProfessor = document.getElementById("btnProfessor");
-    const btnCopiar = document.getElementById("btnCopiar");
-    const professorBox = document.getElementById("professorBox");
+ 
+const resultado = document.getElementById("resultado");
+const btnIndicar = document.getElementById("btnIndicar");
+const btnProfessor = document.getElementById("btnProfessor");
+const btnCopiar = document.getElementById("btnCopiar");
+const professorBox = document.getElementById("professorBox");
 
-    function indicarSerie() {
-      const i = Math.floor(Math.random() * series.length);
-      const s = series[i];
-      resultado.innerHTML = `
-        <h2 class="serie-titulo">${s.titulo}</h2>
-        <p class="serie-vibe">Vibe: ${s.vibe}</p>
-        <p class="serie-desc">${s.desc}
-          <br><br><em>Dica:</em> pesquise também críticas e análises pra entender os temas psicológicos.
-        </p>
-      `;
-    }
+// ===== FUNÇÃO  INDICAR SÉRIE =====
+function indicarSerie() {
+ 
+  const numeroAleatorio = Math.floor(Math.random() * series.length);
 
-    function alternarProfessor() {
-      const visivel = professorBox.style.display === "block";
-      professorBox.style.display = visivel ? "none" : "block";
-    }
 
-    function copiarJustificativa() {
-      const texto = "Professor(a), desenvolvi este site para praticar HTML, CSS e JavaScript. " +
-        "Usei séries psicológicas como tema para aplicar arrays, eventos de clique e manipulação de DOM. " +
-        "A seleção é aleatória para incentivar a exploração crítica e a comparação de narrativas. :)";
-      navigator.clipboard.writeText(texto)
-        .then(() => alert("Justificativa copiada! (Agora parece até sério 👀)"))
-        .catch(() => alert("Ops! Não consegui copiar automaticamente. Copie manualmente: \n\n" + texto));
-    }
+  const serieEscolhida = series[numeroAleatorio];
 
-    btnIndicar.addEventListener("click", indicarSerie);
-    btnProfessor.addEventListener("click", alternarProfessor);
-    btnCopiar.addEventListener("click", copiarJustificativa);
+  
+  resultado.innerHTML =
+    "<h2 class='serie-titulo'>" + serieEscolhida.titulo + "</h2>" +
+    "<p class='serie-vibe'>Vibe: " + serieEscolhida.vibe + "</p>" +
+    "<p class='serie-desc'>" +
+      serieEscolhida.desc +
+      "<br><br><em>Dica:</em> pesquise também críticas e análises para entender os temas psicológicos." +
+    "</p>";
+}
+
+// ===== FUNÇÃO MODO PROFESSOR =====
+function alternarProfessor() {
+  if (professorBox.style.display === "block") {
+    professorBox.style.display = "none";
+  } else {
+    professorBox.style.display = "block";
+  }
+}
+
+// ===== FUNÇÃO COPIAR JUSTIFICATIVA =====
+function copiarJustificativa() {
+  const texto =
+    "Professor(a), desenvolvi este site para praticar HTML, CSS e JavaScript. " +
+    "Utilizei séries psicológicas como tema para aplicar arrays, eventos de clique " +
+    "e manipulação do DOM. A seleção aleatória incentiva a exploração crítica.";
+
+  navigator.clipboard.writeText(texto)
+    .then(function () {
+      alert("Justificativa copiada! (Agora parece até sério 👀)");
+    })
+    .catch(function () {
+      alert(
+        "Não foi possível copiar automaticamente. Copie manualmente:\n\n" + texto
+      );
+    });
+}
+
+
+btnIndicar.addEventListener("click", indicarSerie);
+btnProfessor.addEventListener("click", alternarProfessor);
+btnCopiar.addEventListener("click", copiarJustificativa);
