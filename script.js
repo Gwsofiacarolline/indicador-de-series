@@ -2,37 +2,37 @@
       {
         titulo: "Mindhunter",
         vibe: "Perfis criminais, entrevistas tensas e mentes complicadas.",
-        desc: "Dois agentes do FBI decidem estudar psicologia de serial killers para resolver casos. Calma, professor(a): é pesquisa qualitativa de campo!"
+        desc: "Dois agentes do FBI expandem as fronteiras da ciência criminal nos anos 70 com um perigoso mergulho no universo da psicologia do assassinato."
       },
       {
         titulo: "Dark",
         vibe: "Viagem no tempo, segredos e cérebro derretendo suavemente.",
-        desc: "Uma cidadezinha alemã, desaparecimentos misteriosos e uma trama que vai dobrar sua percepção de tempo — e a sua planilha de estudos."
+        desc: "Os mistérios sombrios de uma pequena cidade alemã são expostos quando duas crianças desaparecem. Enquanto as famílias procuram os dois desaparecidos, eles descobrem uma trama de indivíduos conectados com a história conturbada da cidade."
       },
       {
         titulo: "You",
         vibe: "Obsessão, narrador nada confiável e decisões duvidosas.",
-        desc: "A mente do Joe prova que amor e limites precisam de terapia. Ótimo estudo de personagem. Nada a replicar na vida real, combinado."
+        desc: "Obsessivo e mortalmente charmoso, Joe vai ao extremo para entrar na vida de quem o fascina. Por trás de seus modos gentis, há uma fúria assassina e um passado perturbador."
       },
       {
         titulo: "Black Mirror",
         vibe: "Tecnologia, paranoia e experimentos sociais com plot twist.",
-        desc: "Cada episódio é um soco mental sobre como a tech mexe com a cabeça. Dá até pra citar em TCC (com moderação e referências)."
+        desc: "Contos de ficção científica que refletem o lado negro das telas e da tecnologia, mostrando que nem toda novidade traz só benefícios."
       },
       {
         titulo: "The Sinner (O Pecador)",
         vibe: "Crimes com camadas psicológicas e passado mal-resolvido.",
-        desc: "Um detetive cava fundo na psique por trás de crimes aparentemente sem sentido. Ideal pra quem ama 'porquês' e gatilhos mentais."
+        desc: "É uma série de antologia criminal que o foco não é descobrir "quem" cometeu o crime, mas sim "por que" ele foi cometido. A trama acompanha o detetive Harry Ambrose, que investiga crimes perturbadores e busca desvendar os traumas e mistérios por trás das ações dos "pecadores" em cada temporada. "
       },
       {
         titulo: "Behind Her Eyes (Por Trás de Seus Olhos)",
         vibe: "Tensão, sonhos e aquele final que você comenta por dias.",
-        desc: "Triângulo que vira hexágono emocional na sua cabeça. Suspense psicológico com toque… digamos… esotérico."
+        desc: "Louise, uma mãe solteira que se envolve em um caso com seu novo chefe, David, um psiquiatra casado, e, sem querer, se torna amiga da esposa dele, Adele, mergulhando numa teia de segredos, manipulações e elementos sobrenaturais, culminando em uma reviravolta chocante que redefine tudo o que ela pensava saber sobre o casal e sobre si mesma, explorando temas como projeção astral e identidades trocadas. "
       },
       {
         titulo: "The Haunting of Hill House",
         vibe: "Traumas de família, memórias e fantasmas (nem sempre externos).",
-        desc: "Horror com coração e psicologia: medo, luto e reconciliação. Você vai pular e refletir — às vezes ao mesmo tempo."
+        desc: "Entre o passado e o presente, uma família abalada confronta memórias assustadoras de seu antigo lar e dos eventos aterrorizantes que os expulsaram de lá."
       },
       {
         titulo: "Desobedientes",
@@ -59,7 +59,7 @@ const btnProfessor = document.getElementById("btnProfessor");
 const btnCopiar = document.getElementById("btnCopiar");
 const professorBox = document.getElementById("professorBox");
 
-// ===== FUNÇÃO  INDICAR SÉRIE =====
+// ===== FUNÇÃO INDICAR SÉRIE =====
 function indicarSerie() {
  
   const numeroAleatorio = Math.floor(Math.random() * series.length);
@@ -86,25 +86,9 @@ function alternarProfessor() {
   }
 }
 
-// ===== FUNÇÃO COPIAR JUSTIFICATIVA =====
-function copiarJustificativa() {
-  const texto =
-    "Professor(a), desenvolvi este site para praticar HTML, CSS e JavaScript. " +
-    "Utilizei séries psicológicas como tema para aplicar arrays, eventos de clique " +
-    "e manipulação do DOM. A seleção aleatória incentiva a exploração crítica.";
-
-  navigator.clipboard.writeText(texto)
-    .then(function () {
-      alert("Justificativa copiada! (Agora parece até sério 👀)");
-    })
-    .catch(function () {
-      alert(
-        "Não foi possível copiar automaticamente. Copie manualmente:\n\n" + texto
-      );
-    });
-}
 
 
 btnIndicar.addEventListener("click", indicarSerie);
 btnProfessor.addEventListener("click", alternarProfessor);
 btnCopiar.addEventListener("click", copiarJustificativa);
+
