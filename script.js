@@ -49,13 +49,12 @@
         vibe: "Séries dramáticas, Alemães, Suspense para TV",
         desc: "Uma família se muda para uma casa inteligente antiga e descobre que ela é controlada por uma assistente virtual que faz de tudo para mantê-los lá."
       },
-        {
+      {
         titulo: "Black List",
         vibe: "Séries policiais, Séries dos EUA, Suspense para TV",
         desc: "Após se entregar à polícia, um brilhante fugitivo oferece ajuda ao FBI, mas apenas se a novata Elizabeth Keen for sua parceira."
       },
         
-      
     ];
 
  
@@ -96,6 +95,7 @@ function alternarProfessor() {
 // ===== EVENTOS DE CLIQUE =====
 btnIndicar.addEventListener("click", indicarSerie);
 btnProfessor.addEventListener("click", alternarProfessor);
+
 
 
 
